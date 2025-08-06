@@ -8,58 +8,125 @@
 }
 
 /* Set default text color for header and its links */
-.header, .header a {
+.header,
+.header a {
   color: white;
 }
 
-/* Main header  */
+/* Main header */
 .header {
-  height: clamp(80px, 10vw, 80px); /* Allows responsive height but clamps it to 80px */
+  height: clamp(80px, 10vw, 80px); /* Responsive height clamped at 80px */
   width: 100%;
   background-color: #101010;
-  display: flex;                   /* Enables flex layout */
-  align-items: center;            /* Vertically centers items */
-  justify-content: space-between; /* Pushes items to opposite ends */
+  display: flex;                   /* Flex layout */
+  align-items: center;            /* Vertically center items */
+  justify-content: space-between; /* Space between items */
   font-family: 'Montserrat', sans-serif;
-  padding: 0 5vw;                 /* Horizontal top-bottom right-left padding scales with viewport */
+  padding: 0 5vw;                 /* Horizontal padding scales with viewport */
 }
 
-
 .header h1 {
-  font-size: clamp(1.5rem, 2vw, 2.5rem); 
-  white-space: nowrap; /* Prevents line breaks for long titles */
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  white-space: nowrap;            /* Prevent line breaks */
   user-select: none;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
 }
-
 
 .header h1:hover {
   transform: rotateX(180deg) skew(15deg);
 }
 
 .header ul {
-  display: flex; 
-  gap: 20px;     
+  display: flex;
+  gap: 20px;
 }
 
 .header li {
   padding: 0 10px;
   font-size: 16px;
   transition: transform 0.3s ease;
-  white-space: nowrap; /* Prevents wrapping on smaller screens */
+  white-space: nowrap;            /* Prevent wrapping */
 }
 
 .header li:hover {
   transform: scale(1.2);
 }
 
+section {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.home {
+  background: linear-gradient(
+    135deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(38, 38, 38, 1) 97%,
+    rgba(38, 38, 38, 1) 100%
+  );
+  font-family: poppins, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+
+.home h1::before {
+  content: '';                   /* underline */
+  position: absolute;
+  bottom: -1.5vw;
+  left: 0;
+  width: 0%;
+  height: clamp(5px, 12px, 1vw);
+  background-color: white;
+  transition: all 1s;
+}
+
+.home h1 {
+  position: relative;
+  font-size: clamp(6.5rem, 6vw, 13rem);
+  transform: scale(0.98);
+  transition: all 1s ease;
+}
+
+.home h1:hover {
+  text-shadow:
+    4px 4px 0 #003366,
+    8px 8px 10px rgba(0, 0, 0, 0.7),
+    12px 12px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+
+.home h1:hover::before {
+  width: 100%;
+  box-shadow:
+    4px 4px 0 #003366,
+    8px 8px 10px rgba(0, 0, 0, 0.7),
+    12px 12px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* Responsive layout changes for smaller screens */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Switches to vertical stacking */
-    justify-content: center; /* Centers items vertically */
-    align-items: center;     /* Centers items horizontally */
-    gap: 10px;               /* Adds space between stacked items */
+    flex-direction: column;      /* Stack vertically */
+    justify-content: center;     /* Center vertically */
+    align-items: center;         /* Center horizontally */
+    gap: 10px;                   /* Space between items */
+  }
+
+  .home {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .home h1 {
+    font-size: clamp(3.5rem, 10vw, 4.5rem);
+  }
+
+  .home h1::before {
+    bottom: -2.5vw;
   }
 }
