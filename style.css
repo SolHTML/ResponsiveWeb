@@ -145,7 +145,7 @@ section {
   transform: translateX(3%) translateY(28%);
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1350px) {
   .home img {
     display: none;
   }
