@@ -61,7 +61,8 @@
 
 section {
   width: 100%;
-  min-height: calc(100dvh - 80px);
+  min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 
 /* === Home Section === */
@@ -187,7 +188,7 @@ section {
 .about h1 {
   font-family: "Playwrite PL", cursive;
   color: #333333;
-  font-size: clamp(4.5rem, 6vw, 13rem);
+  font-size: clamp(4.2rem, 6vw, 13rem);
   display: inline-block;
   padding-bottom: 2vw;
   text-align: center;
@@ -247,7 +248,7 @@ section {
   }
 
   .about h1 {
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-size: clamp(1.9rem, 5vw, 3.5rem);
   }
 
   .about p {
