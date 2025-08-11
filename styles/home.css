@@ -1,0 +1,85 @@
+/* home.css */
+section {
+  width: 100%;
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+}
+
+.home {
+  background: linear-gradient(
+    135deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(38, 38, 38, 1) 97%,
+    rgba(38, 38, 38, 1) 100%
+  );
+  font-family: poppins, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2vw;
+}
+
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.main-info h1 {
+  position: relative;
+  font-size: clamp(6.5rem, 6vw, 13rem);
+  transform: scale(0.98);
+  transition: all 1s ease;
+  display: inline-block;
+}
+
+.main-info h1::before {
+  content: '';
+  position: absolute;
+  bottom: -1.5vw;
+  left: 0;
+  width: 0%;
+  height: clamp(5px, 12px, 1vw);
+  background-color: white;
+  transition: all 1s;
+}
+
+.main-info h1:hover {
+  text-shadow:
+    4px 4px 0 #003366,
+    8px 8px 10px rgba(0, 0, 0, 0.7),
+    12px 12px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+
+.main-info h1:hover::before {
+  width: 100%;
+  box-shadow:
+    4px 4px 0 #003366,
+    8px 8px 10px rgba(0, 0, 0, 0.7),
+    12px 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.main-info p {
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+  text-align: start;
+  padding: 20px 10px;
+  width: min(90vw, 1100px);
+  line-height: 1.6;
+}
+
+#intro {
+  margin-top: 45px;
+}
+
+.home img {
+  object-fit: cover;
+  width: clamp(200px, 70%, 800px);
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  transform: translateX(3%) translateY(28%);
+}
