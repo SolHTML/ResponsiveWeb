@@ -1,0 +1,75 @@
+/* responsive.css */
+@media (max-width: 1350px) {
+  .home img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  section {
+    min-height: unset;
+    height: auto;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-info h1 {
+    font-size: clamp(3.5rem, 10vw, 4.5rem);
+  }
+
+  .main-info h1::before {
+    bottom: -2.5vw;
+  }
+
+  .main-info p {
+    font-size: 1rem;
+    text-align: center;
+    width: 90vw;
+    padding: 10px 20px;
+  }
+
+  #intro {
+    margin-top: 22px;
+  }
+
+  .main-info {
+    align-items: center;
+  }
+
+  .about, .pricing, .offer {
+    align-items: center;
+  }
+
+  .about h1 {
+    font-size: clamp(1.9rem, 5vw, 3.5rem);
+  }
+
+  .about p {
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+  }
+
+  .pricing h1 {
+    font-size: clamp(2rem, 10vw, 12rem);
+  }
+
+  .pricing h2 {
+    font-size: clamp(1.5rem, 5vw, 6rem);
+  }
+
+  .offer li {
+    text-align: center;
+  }
+
+}

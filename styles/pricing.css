@@ -1,0 +1,64 @@
+/* pricing.css */
+.pricing {
+  position: relative;
+  background: linear-gradient(135deg, #1CA9C9, #3B8D99);
+  padding-top: 0;
+  display: flex;
+  padding: 1vw 2vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white
+}
+
+.pricing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/weezer.webp') center/cover no-repeat;
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+.pricing h1 {
+  user-select: none;
+   -webkit-user-select: none;
+  font-family: weezerfont;
+  font-size: clamp(4rem, 6vw, 7rem);
+  display: inline-block;
+  max-width: max-content;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.pricing h1:hover {
+        transform: scale(1.03);
+  color: #e0f7fa; /* pale cyan */
+  text-shadow:
+    0 0 3px #a0d8ef,
+    0 0 7px #a0d8ef,
+    0 0 10px #a0d8ef,
+    0 0 15px #a0d8ef;
+}
+
+.pricing h2 {
+  font-family: poppins;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  padding-top: 1.5vw;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer ol {
+  padding: 2.5em;
+  font-family: Poppins;
+  margin-left: 10px;
+}
+
+.offer li {
+  list-style: decimal;
+  padding: 1vw 0;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
