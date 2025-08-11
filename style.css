@@ -229,6 +229,7 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .pricing h2 {
   font-family: Unbounded;
 }
