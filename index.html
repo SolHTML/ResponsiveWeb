@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>practice</title>
     <!--fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/weezerfont" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/weezerfont" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet" />
     <!--styles-->
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/pricing.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
   <!-- Header -->
-  <div class="header">
+  <div class="header" role="banner">
     <div class="logo-container">
       <h1>Sol Tutors</h1>
     </div>
-    <nav>
+    <nav role="navigation" aria-label="Primary navigation">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -36,38 +36,51 @@
     </nav>
   </div>
 
-  <!-- First Page -->
-  <section class="home" id="home">
-    <div class="main-info">
-      <h1>Struggling?</h1>
-    <p id="intro">
-      We get it — some subjects just don’t click, no matter how many times you reread the material or sit through class.
-      Whether you’re stuck on math problems, lost in science, or just trying to keep up with everything at once, it can feel overwhelming.
-    </p>
-    <p>
-      That’s where we come in. Sol Tutors gives you one-on-one support that actually makes sense.
-      No confusing explanations, no pressure — just real help from someone who knows how to break things down and help you get it.
-      We're here to make school easier, not harder.
-    </p>
-    </div>
-    <img src="tutor2.png" alt="a picuture of a teacher tutoring infront of a board">
-  </section>
-  <!-- Second Page meet your tutor -->
-   <section class="about" id="about">
+  <main>
+    <!-- First Page -->
+    <section class="home" id="home" role="region" aria-label="Home Section">
+      <div class="main-info">
+        <h1>Struggling?</h1>
+        <p id="intro">
+          We get it — some subjects just don’t click, no matter how many times you reread the material or sit through class.
+          Whether you’re stuck on math problems, lost in science, or just trying to keep up with everything at once, it can feel overwhelming.
+        </p>
+        <p>
+          That’s where we come in. Sol Tutors gives you one-on-one support that actually makes sense.
+          No confusing explanations, no pressure — just real help from someone who knows how to break things down and help you get it.
+          We're here to make school easier, not harder.
+        </p>
+      </div>
+      <img src="tutor2.png" alt="A picture of a teacher tutoring in front of a board" />
+    </section>
+
+    <!-- Second Page meet your tutor -->
+    <section class="about" id="about" role="region" aria-label="Meet Your Tutor Section">
       <h1>Meet Your Tutor!</h1>
       <div class="textbox">
-          <p>Hey! I'm Sol — a passionate and patient tutor who's here to help students actually understand what they’re learning, not just memorize it for the test. Through  <span class="flip-container"><span class="flip">Sol Tutors</span></span>, I work to make learning clear, simple, and even a little fun.</p>
-          <p>As a student myself, I know exactly how confusing school can get. That’s why I’ve spent the last few years helping classmates and younger students tackle tough subjects in a way that finally clicks.</p>
-          <p>I offer tutoring in math, science, English, and more — whether you're in elementary school or middle school, I’ve got you.</p>
-          <p>No boring lectures. I explain things in a simple, friendly way and adapt to how you learn best. I believe everyone learns differently — and that's totally okay.</p>
-          <p>Fun fact: This website was coded entirely by me! And if you’re interested, I can even show you how to build one yourself.</p>
+        <p>
+          Hey! I'm Sol — a passionate and patient tutor who's here to help students actually understand what they’re learning, not just memorize it for the test. Through 
+          <span class="flip-container"><span class="flip">Sol Tutors</span></span>, I work to make learning clear, simple, and even a little fun.
+        </p>
+        <p>
+          As a student myself, I know exactly how confusing school can get. That’s why I’ve spent the last few years helping classmates and younger students tackle tough subjects in a way that finally clicks.
+        </p>
+        <p>I offer tutoring in math, science, English, and more — whether you're in elementary school or middle school, I’ve got you.</p>
+        <p>
+          No boring lectures. I explain things in a simple, friendly way and adapt to how you learn best. I believe everyone learns differently — and that's totally okay.
+        </p>
+        <p>
+          Fun fact: This website was coded entirely by me! And if you’re interested, I can even show you how to build one yourself.
+        </p>
       </div>
-   </section>
-   <!-- Third page pricing-->
-    <section class="pricing" id="pricing">
+    </section>
+
+    <!-- Third page pricing-->
+    <section class="pricing" id="pricing" role="region" aria-label="Services and Fees Section">
       <h1>Services & Fees</h1>
+      <div class="content-container">
       <div class="offer">
-        <h2>what we offer*</h2>
+        <h2>what we offer</h2>
         <ol>
           <li>Personalized one-on-one tutoring tailored to your unique learning style</li>
           <li>Help with core subjects: math, science, English, and more</li>
@@ -77,6 +90,27 @@
           <li>Progress tracking so you can see your improvement</li>
         </ol>
       </div>
+      <div class="pricing-section">
+        <h2>what we charge</h2>
+        <div class="pricing-card">
+          <h3>A Virtual Lesson for 30 minutes: 15$</h3>
+          <p>we'll open a zoom call and you'll share the subject you need help in and book pages related to the subject</p>
+        </div>
+        <div class="pricing-card">
+          <h3>A Virtual Lesson for 60 minutes: 25$</h3>
+          <p>we'll open a zoom call and you'll share the subject you need help in and book pages related to the subject</p>
+        </div>
+        <div class="pricing-card">
+          <h3>A Home Lesson for 30 minutes: 20$ + travel fee</h3>
+          <p>we'll meet at your house</p>
+        </div>
+        <div class="pricing-card">
+          <h3>A Home Lesson for 60 minutes: 30$ + travel fee</h3>
+          <p>we'll meet at your house</p>
+        </div>
+      </div>
+      </div>
     </section>
- </body>
+  </main>
+</body>
 </html>
