@@ -18,7 +18,7 @@
     height: auto;
   }
 
-  .home {
+  .home, .content-container {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -70,6 +70,10 @@
 
   .offer li {
     text-align: center;
+  }
+
+  .pricing-section {
+    gap: 3vw
   }
 
 }
