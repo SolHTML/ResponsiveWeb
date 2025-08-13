@@ -39,7 +39,7 @@ section {
 .main-info h1::before {
   content: '';
   position: absolute;
-  bottom: -1.5vw;
+  bottom: calc(-1vw - 0.8rem);
   left: 0;
   width: 0%;
   height: clamp(5px, 12px, 1vw);
