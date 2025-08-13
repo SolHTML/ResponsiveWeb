@@ -25,7 +25,7 @@
   }
 
   .main-info h1 {
-    font-size: clamp(3.5rem, 10vw, 4.5rem);
+    font-size: clamp(3.5rem, calc(7vw + 1rem), 4.5rem);
   }
 
   .main-info h1::before {
