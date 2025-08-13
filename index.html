@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/pricing.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/responsive.css" /> <!--must be at the bottom dumbass-->
 </head>
 <body>
   <!-- Header -->
@@ -113,7 +114,74 @@
     </section>
     <!-- Fourth page contact-->
      <section class="contact" id="contact">
-      
+      <div class="contact-form-heading">
+      <h1>Contact Us</h1>
+      <p>Want to schedule a lesson, or just curious about something? Get in touch!</p>
+      </div>
+      <div class="grid">
+        <div class="details card">
+          <h2>Other Ways To Reach Us</h2>
+          <p>Prefer a whatsapp or a quick call? We're Happy To chat.</p>
+          <ul class="links">
+            <li><strong>Whatsapp:</strong> <a href="https://media.makeameme.org/created/aint-got-no-53781657c2.jpg" target="_blank" rel="noopener">whatsapplink.com</a></li>
+            <li><strong>Phone:</strong> <a href="https://i.ytimg.com/vi/iTZbX0rcCHI/hqdefault.jpg" target="_blank" rel="noopener">+972 69 467 5620 </a></li>
+            <li><strong>Socials:</strong> <a href="https://www.youtube.com/@SolWasTaken_" target="_blank" rel="noopener">Youtube</a> • <a href="https://github.com/SolHTML" target="_blank" rel="noopener">Github</a></li>
+          </ul>
+          <p>Hours: Sun–Thu 09:00–17:00 (Asia/Jerusalem)</p>
+        </div>
+        <div class="card">
+          <h2 id="form-heading">Send a Message</h2>
+          <form id="contact-form" method="post" action="" autocomplete="on">
+            <div class="row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="user-name" placeholder="Gerard Way" required autocomplete="name">
+              </div>
+              <div class="field">
+                  <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="quackaddict@gmail.com" required autocomplete="email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="phone">
+                  Phone
+                  <span class="hint">(optional)</span>
+                </label>
+                <input type="text" id="phone" name="phone" placeholder="+972 50 123 4567" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="field">
+                  <label for="reason">Reason</label>
+                  <select id="reason" name="reason" required>
+                    <option value="" disabled="" selected="">Select One...</option>
+                    <option>Plan a lesson</option>
+                    <option>Ask a question</option>
+                    <option>Report a problem</option>
+                  </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="A few words..." minlength="10"></textarea>
+            </div>
+            <div class="row">
+            <div class="field">
+              <label class="checkbox"> <span>i agree to the <a href="tos.html" target="_blank" rel="noopener">terms of service</a>.</span>
+                <input type="checkbox" id="consent" name="consent" required>
+              </label>
+              <div class="hint">
+                We’ll only use your info to reply to your message.
+              </div>
+            </div>
+            <button type="submit">Send message</button>
+          </div>
+          </form>
+        </div>
+      </div>
      </section>
   </main>
 </body>

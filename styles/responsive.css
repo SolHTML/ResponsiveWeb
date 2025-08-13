@@ -76,4 +76,11 @@
     gap: 3vw
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+   .row {
+    grid-template-columns: 1fr;
+   }
 }

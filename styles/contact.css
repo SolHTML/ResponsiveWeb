@@ -1,0 +1,163 @@
+.contact {
+    background: /* multi layer background wtf you can do that??? */
+     radial-gradient(1200px 1200px at 10% 0%, rgba(96,165,250,0.12), transparent 60%),
+     radial-gradient(1200px 1200px at 90% 20%, rgba(34,211,238,0.10), transparent 60%),
+    #0f172a;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #e5e7eb;
+    font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"
+}
+
+.contact-form-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact-form-heading h1 {
+    margin: 0  0 6px;
+    font-size: clamp(1.8rem, 2.4vw, 2.6rem);
+}
+
+.contact-form-heading p {
+    color: #94a3b8;
+    margin: #e5e7eb;
+}
+
+.links {
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px
+}
+
+.links a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    gap: clamp(16px, 2.2vw, 28px);
+    grid-template-columns: 1.1fr 1.3fr;
+}
+
+.card {
+     background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.00));
+     border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);    /* soft depth */
+  backdrop-filter: blur(8px);
+    padding: clamp(16px, 2.2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+.details {
+    gap: 1rem;
+}
+
+
+
+.details h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+}
+
+.details p {
+   color: #94a3b8;
+}
+
+form {
+    display: grid;
+    gap: 14px;
+}
+
+.row {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.field {
+    display: grid;
+    gap: 6px
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(148,163,184,0.35);
+    background: rgba(2,6,23,0.35);
+    color: #94a3b8;
+    padding: 12px 14px;
+    font: inherit;
+}
+
+.hint {
+    color: #94a3b8;
+  font-size: .9rem;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between checkbox and text */
+}
+
+.checkbox span {
+    display: inline;
+}
+
+.checkbox a {
+    display: inline;
+}
+input[type="checkbox"] {
+    width: auto;  
+    height: auto;
+    margin-top: 4px;
+}
+
+button {
+    border: 3px solid #22d3ee;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background-color: #22d3ee;
+    background-size: 100% 130%;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    color: #181818;
+    box-shadow: 0 8px 25px rgba(34,211,238,0.25);
+    transition: color 0.25s ease;
+}
+
+
+button:hover {
+    background-color: transparent;
+    background-image: url(city.gif);
+    color: #97f1ff;
+    transition: color 0.25s ease;
+}
+
+ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
