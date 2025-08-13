@@ -76,4 +76,15 @@
     gap: 3vw
   }
 
+  .pricing-section {
+    gap: 3vw
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+   .row {
+    grid-template-columns: 1fr;
+   }
 }
