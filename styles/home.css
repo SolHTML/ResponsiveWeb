@@ -6,9 +6,9 @@ section {
 }
 
 .home {
-  background:     radial-gradient(1200px 1200px at 10% 0%, rgba(20, 25, 40, 0.12), transparent 60%),
+  background:  radial-gradient(1200px 1200px at 10% 0%, rgba(20, 25, 40, 0.12), transparent 60%),
     radial-gradient(1200px 1200px at 90% 20%, rgba(30, 35, 60, 0.10), transparent 60%),
-    #111318; /* dark charcoal base with slight bluish undertone */
+    #111318; 
   font-family: poppins, sans-serif;
   color: #e0e7ff;
   display: flex;

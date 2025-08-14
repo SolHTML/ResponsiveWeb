@@ -17,10 +17,11 @@
     font-size: clamp(6px, 0.8rem, 16px);
   }
 
-  section {
+  section, .spacer {
     min-height: unset;
     height: auto;
   }
+
 
   .home, .content-container {
     flex-direction: column;
