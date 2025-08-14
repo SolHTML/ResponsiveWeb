@@ -1,19 +1,16 @@
 /* home.css */
 section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   scroll-margin-top: 80px;
 }
 
 .home {
-  background: linear-gradient(
-    135deg,
-    rgba(18, 18, 18, 1) 0%,
-    rgba(38, 38, 38, 1) 97%,
-    rgba(38, 38, 38, 1) 100%
-  );
+  background:     radial-gradient(1200px 1200px at 10% 0%, rgba(20, 25, 40, 0.12), transparent 60%),
+    radial-gradient(1200px 1200px at 90% 20%, rgba(30, 35, 60, 0.10), transparent 60%),
+    #111318; /* dark charcoal base with slight bluish undertone */
   font-family: poppins, sans-serif;
-  color: white;
+  color: #e0e7ff;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -34,6 +31,7 @@ section {
   transform: scale(0.98);
   transition: all 1s ease;
   display: inline-block;
+  color: #d0dbff;
 }
 
 .main-info h1::before {
@@ -43,7 +41,7 @@ section {
   left: 0;
   width: 0%;
   height: clamp(5px, 12px, 1vw);
-  background-color: white;
+  background-color: #d0dbff;
   transition: all 1s;
 }
 
@@ -69,6 +67,7 @@ section {
   padding: 20px 10px;
   width: min(90vw, 1100px);
   line-height: 1.6;
+  color: #a0a8c5;
 }
 
 #intro {
@@ -76,17 +75,18 @@ section {
 }
 
 .tutor-wrapper {
-  width: clamp(200px, 70%, 800px);
+  width: clamp(200px, 70%, 600px);
+  align-self: flex-end;
   max-width: 80%;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
-.tutor-wrapper img {
+.tutor-wrapper svg {
   width: 100%;  
   min-width: 200px;
   height: auto;     
   object-fit: cover;
-  transform: translateY(28%); 
   display: block;   
 }
 

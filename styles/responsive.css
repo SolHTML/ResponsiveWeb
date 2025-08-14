@@ -1,6 +1,6 @@
 /* responsive.css */
 @media (max-width: 1350px) {
-  .home img {
+  .home svg {
     display: none;
   }
 }
