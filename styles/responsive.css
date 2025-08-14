@@ -13,6 +13,10 @@
     gap: 10px;
   }
 
+  .header li {
+    font-size: clamp(6px, 0.8rem, 16px);
+  }
+
   section {
     min-height: unset;
     height: auto;

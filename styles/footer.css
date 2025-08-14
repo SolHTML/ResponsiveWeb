@@ -24,7 +24,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: clamp(24px, 1rem, 30px);
+    font-size: clamp(14px, 1rem, 30px);
     margin-top: -10px;
 }
 
