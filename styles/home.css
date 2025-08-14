@@ -75,11 +75,18 @@ section {
   margin-top: 45px;
 }
 
-.home img {
-  object-fit: cover;
+.tutor-wrapper {
   width: clamp(200px, 70%, 800px);
   max-width: 80%;
-  height: auto;
   margin: 0 auto;
-  transform: translateX(3%) translateY(28%);
 }
+
+.tutor-wrapper img {
+  width: 100%;  
+  min-width: 200px;
+  height: auto;     
+  object-fit: cover;
+  transform: translateY(28%); 
+  display: block;   
+}
+
