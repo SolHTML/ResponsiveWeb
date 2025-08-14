@@ -52,6 +52,7 @@
   font-size: clamp(4.2rem, 6vw, 13rem);
   display: inline-block;
   padding-bottom: 2vw;
+  margin-top: -40px;
   text-align: center;
   transition: all 0.3s ease;
 }
