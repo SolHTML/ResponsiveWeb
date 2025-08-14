@@ -26,7 +26,6 @@
 
 .contact-form-heading p {
     color: #94a3b8;
-    margin: #e5e7eb;
 }
 
 .links {
@@ -68,7 +67,30 @@
     gap: 1rem;
 }
 
+.details ul {
+    gap: 0.7em;
+}
 
+.details li {
+    border-radius: 12px;
+    padding: 14px 12px;
+    background: rgba(148, 163, 184, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5em
+}
+
+.details li svg {
+    flex-shrink: 0;
+    vertical-align: -0.2em;
+}
+
+.icon-wrapper {
+    display: inline-flex;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+}
 
 .details h2 {
     margin: 0 0 12px 0;
@@ -99,6 +121,7 @@ label {
     font-weight: 600;
 }
 
+
 input, select, textarea {
     width: 100%;
     border-radius: 12px;
@@ -107,6 +130,10 @@ input, select, textarea {
     color: #94a3b8;
     padding: 12px 14px;
     font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    color: #e5e7eb;
 }
 
 .hint {
