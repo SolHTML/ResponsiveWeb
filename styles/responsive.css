@@ -87,4 +87,8 @@
    .row {
     grid-template-columns: 1fr;
    }
+
+   #credits {
+    position: static;
+   }
 }
