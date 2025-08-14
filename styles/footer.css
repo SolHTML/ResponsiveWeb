@@ -20,6 +20,26 @@ footer {
     font-size: 1.8rem;
 }
 
+.icon-list svg {
+    transition: all 0.3s ease;
+}
+
+#whatsapp-icon:hover {
+    fill: #22c55e;
+}
+
+#phone-icon:hover {
+    fill: #38bdf8;
+}
+
+#youtube-icon:hover {
+    fill: #f87171;
+}
+
+#github-icon:hover {
+    fill: #cbd5e1;
+}
+
 .footer-nav {
     display: flex;
     align-items: center;
@@ -31,7 +51,11 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #cbd5e1;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #fff;
 }
 
 footer li {
@@ -40,7 +64,6 @@ footer li {
 
 footer li:hover {
     transform: scale(1.1);
-    transition: 0.3s ease;
 }
 
 #credits {
