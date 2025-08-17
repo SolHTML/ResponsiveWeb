@@ -22,3 +22,22 @@ html {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .home::before {
+    background: #111318b1;
+  }
+
+  .about {
+    background: linear-gradient(299deg,rgba(30, 35, 50, 1) 0%, rgba(40, 45, 60, 1) 27%, rgba(50, 55, 70, 1) 100% );
+  }
+
+  .about p {
+    background: #333a4d;
+  }
+
+  footer svg {
+    fill: #fff
+  }
+
+
+}

@@ -20,6 +20,10 @@ footer {
     font-size: 1.8rem;
 }
 
+footer svg {
+    fill: #fff;
+}
+
 .icon-list svg {
     transition: all 0.3s ease;
 }

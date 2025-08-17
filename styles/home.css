@@ -20,7 +20,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-background: #111318b1 !important;
+background: #111318b1;
   z-index: -1;
   }
 
@@ -128,16 +128,3 @@ background: #111318b1 !important;
   display: block;   
 }
 
-.spacer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: clamp(30px,calc(1vw + 1rem),80px);
-    padding: 1vw;
-    background-color: #e1e4d6;
-    border-bottom-right-radius: 18px;
-    border-bottom-left-radius: 18px;
-    overflow: hidden; 
-    font-size: 2rem;
-    color: #d0dbff;
-}
