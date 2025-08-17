@@ -47,9 +47,10 @@ background: #111318b1;
   position: relative;
   font-size: clamp(6.5rem, 6vw, 13rem);
   transform: scale(0.98);
-  transition: transform 1s ease, text-shadow 1s ease;
+  transition: transform 0.7s ease, text-shadow 0.7s ease;
   display: inline-block;
   color: #d0dbff;
+  animation: fade-in 0.5s;
 }
 
 .main-info h1::before {
@@ -60,7 +61,7 @@ background: #111318b1;
   width: 0%;
   height: 0.08em;
   background-color: #d0dbff;
-  transition: width 1s ease, box-shadow 1s ease;
+  transition: width 0.7s ease, box-shadow 0.7s ease;
 }
 
 .main-info h1:hover {
@@ -86,6 +87,7 @@ background: #111318b1;
   padding: 20px 10px;
   width: min(70vw, 950px);
   line-height: 1.6;
+  animation: fade-in 0.5s;
 }
 
 .pop a {
