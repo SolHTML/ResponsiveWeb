@@ -1,11 +1,7 @@
 /* responsive.css */
-@media (max-width: 1350px) {
-  .home svg {
-    display: none;
-  }
-}
 
 @media (max-width: 768px) {
+
   .header {
     flex-direction: column;
     justify-content: center;
@@ -22,8 +18,13 @@
     height: auto;
   }
 
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: unset;
+  }
 
-  .home, .content-container {
+  .content-container {
     flex-direction: column;
     align-items: center;
     gap: 10px;
