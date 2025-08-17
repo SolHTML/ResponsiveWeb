@@ -40,6 +40,7 @@ background: #111318b1;
   flex-direction: column;
   gap: 1.5rem;
   align-items: start;
+  justify-content: center;
   grid-area: main-info;
 }
 
@@ -83,7 +84,6 @@ background: #111318b1;
 .main-info p {
   justify-self: start;
   font-size: clamp(1.1rem, 2.2vw, 2rem);
-  text-align: start;
   padding: 20px 10px;
   width: min(70vw, 950px);
   line-height: 1.6;
