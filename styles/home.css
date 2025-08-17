@@ -20,7 +20,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-background: #111318b1;
+background: #111318b1 !important;
   z-index: -1;
   }
 
