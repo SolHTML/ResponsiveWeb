@@ -1,5 +1,12 @@
 /* responsive.css */
 
+@media (min-width: 1200px) {
+  .plan-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
 @media (max-width: 768px) {
 
   .header {
@@ -63,24 +70,12 @@
     text-align: center;
   }
 
+  .pricing {
+    grid-template-columns: 1fr;
+  }
   .pricing h1 {
-    font-size: clamp(2rem, 10vw, 12rem);
-  }
-
-  .pricing h2 {
-    font-size: clamp(1.5rem, 5vw, 6rem);
-  }
-
-  .offer li {
-    text-align: center;
-  }
-
-  .pricing-section {
-    gap: 3vw
-  }
-
-  .pricing-section {
-    gap: 3vw
+    font-size: clamp(2rem, 6vw, 7rem);
+    margin: 0;
   }
 
   .grid {
@@ -99,3 +94,5 @@
     display: none;
    }
 }
+
+

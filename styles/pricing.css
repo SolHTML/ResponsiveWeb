@@ -1,13 +1,14 @@
 /* pricing.css */
 .pricing {
   position: relative;
-  background: linear-gradient(135deg, #1CA9C9, #3B8D99);
+  background: linear-gradient(to bottom, #1CA9C9 55%, #192248 55%);
   padding: 1vw 2vw;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
   color: white;
-  min-height: 100vh;
-  align-items: center;
+  min-height: unset;
+  height: fit-content;
 }
 
 .pricing::before {
@@ -15,12 +16,18 @@
   position: absolute;
   inset: 0;
   background: url('weezer.webp') center/cover no-repeat;
-  opacity: 0.02;
+  opacity: 0.01;
   pointer-events: none;
 }
 
-.pricing h1 {
+.pricing-heading {
+  justify-content: center;
+  width: 100%;
+  padding: 2vw;
   text-align: center;
+}
+
+.pricing h1 {
   user-select: none;
   -webkit-user-select: none;
   font-family: "Century Gothic", sans-serif;
@@ -30,7 +37,7 @@
   max-width: max-content;
   border-radius: 10px;
   transition: all 0.6s;
-  margin: 2vw 0;
+  place-self: center;
   animation: fade-in 0.5s;
 }
 
@@ -44,103 +51,47 @@
     0 0 15px #a0d8ef;
 }
 
-.content-container {
-  display: flex;
-  gap: 6vw; 
-  align-items: stretch;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  max-width: 1500px;
+.plan-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding: 2em;
+  justify-items: center;
 }
 
-.pricing h2 {
-  font-family: poppins;
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  text-align: center;
-  padding: 1em;
-  animation: fade-in 0.5s;
-}
-
-
-.offer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 3em; 
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-.pricing-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2vw; 
-  padding: 3em; 
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.offer ol {
-  padding: 2.5em;
-  font-family: Poppins;
+.plan {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5em;
   width: 100%;
-  margin: 0;
-}
-
-.offer li {
-  list-style-position: inside; 
-  padding: 1vw 0;
-  font-size: clamp(1.5rem, 1.5vw, 2.2rem);
-  text-align: center;
-  width: 100%;
-  animation: fade-in 0.5s;
-}
-
-.pricing-card {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 400px;
+  background-color: #fff;
+  color: black;
   border-radius: 12px;
-  padding: 1.5vw;
-  backdrop-filter: blur(5px);
-  transition: all 0.3s ease;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pricing-card:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.pricing-card h3 {
-  font-family: Poppins;
-  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
-  color: white;
-  margin-bottom: 1vw;
+  font-family: sans-serif;
   text-align: center;
-  animation: fade-in 0.5s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pricing-card p {
-  font-family: Poppins;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  line-height: 1.4;
-  animation: fade-in 0.5s;
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.plan h2 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  color: #ff4d4d;
+  margin-bottom: 0.5em;
+}
+
+.price {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0.5em 0;
+}
+
+.desc {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  padding: 0.5em 0;
+}
+
