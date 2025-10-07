@@ -12,6 +12,7 @@
 }
 
 
+
 .pricing-heading {
   justify-content: center;
   width: 100%;
@@ -19,7 +20,7 @@
   text-align: center;
 }
 
-.pricing h1 {
+.pricing-heading h1 {
   user-select: none;
   -webkit-user-select: none;
   font-family: sans-serif;
@@ -36,3 +37,69 @@
 .pricing h1 .highlight {
   color: #826fff;
 }
+
+.pricing-heading p {
+  font-family: poppins;
+  color: #4b5563;
+  font-size: clamp(0.9rem,2vw,1.5rem);
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: 280px;
+  aspect-ratio: 1 / 1.6;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-top: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  border-top-color: #826fff;
+}
+
+.plan h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.plan .price h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 2.5rem;
+  color: #826fff;
+  margin-top: 1.5rem;
+}
+
+.plan .price p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #4b5563;
+  margin-top: 0.3rem
+}
+
+.plan p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #4b5563;
+  margin-top: 8rem;
+}
+
+
+
+
