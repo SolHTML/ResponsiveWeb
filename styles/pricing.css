@@ -1,12 +1,12 @@
 /* pricing.css */
 .pricing {
   position: relative;
-  background: linear-gradient(299deg, rgba(245, 240, 230, 1) 0%, rgba(255, 248, 240, 1) 27%, rgba(250, 243, 224, 1) 100%);
+  background: linear-gradient(299deg, #e5eaee 0%, #e8f4fa 40%, #e9e9f7 100%);
   padding: 1vw 2vw;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
-  color: rgb(255, 20, 20);
+  color: #2e394b;
   min-height: unset;
   height: fit-content;
 }
@@ -22,14 +22,17 @@
 .pricing h1 {
   user-select: none;
   -webkit-user-select: none;
-  font-family: "Century Gothic", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: clamp(4rem, 6vw, 7rem);
   display: inline-block;
   max-width: max-content;
   padding: 1rem;
   border-radius: 10px;
-  border: 5px solid rgb(255, 20, 20);
   place-self: center;
   animation: fade-in 0.5s;
+}
+
+.pricing h1 .highlight {
+  color: #826fff;
 }
