@@ -112,19 +112,3 @@ background: #111318b1;
   background-size: 100% 2px, 100% 2px;
 }
 
-.tutor-wrapper {
-  width: clamp(200px, 70%, 400px);
-  padding-right: 2vw;
-  margin: 0 auto;
-  grid-area: icon;
-  align-self: center;
-  justify-self: center;
-}
-
-.tutor-wrapper svg {
-  width: 100%;  
-  min-width: 200px;
-  height: auto;     
-  display: block;   
-}
-
